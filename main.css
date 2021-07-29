@@ -101,6 +101,15 @@ h2 {
     float: right;
 }
 
+#codingprojects{
+    width: 60%; height: 800px;
+    border-style: solid;
+    border-color: white;
+    background:rgba(1,1,1,0.5);
+    margin-left: 21%;
+    margin-top: 200px;
+}
+
 .gallery {
     margin:17.5px;
     border: 1px solid #ccc;
