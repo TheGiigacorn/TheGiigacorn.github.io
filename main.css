@@ -7,10 +7,17 @@
 * {
     color: var(--fontColor);
     font-family: helvetica;
+    
 }
 
 body {
     background: var(--bg);
+    overflow-y: scroll;
+    height: 100%;
+    background-image: url("purplewebback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 ul {
@@ -30,9 +37,9 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%; height: 350px;
-    position: fixed;
     top:0;
     left:0;
+    position: absolute;
     border-style: solid;
     border-color: var(--white);
     text-align: center;
@@ -46,6 +53,24 @@ li {
     border-color: white;
     background-color: white;
     margin-left: 27.5%;
+}
+
+#aboutme{
+    width: 45%; height: 600px;
+    border-style: solid;
+    border-color: white;
+    background:rgba(1,1,1,0.5);
+    margin-left :27.5%;
+    margin-top: 250px;
+}
+
+#creativeprojects{
+    width: 45%; height:800px;
+    border-style: solid;
+    border-color: white;
+    background:rgba(1,1,1,0.5);
+    margin-left: 27.5%;
+    margin-top: 200px;
 }
 
 .light-theme {
@@ -72,6 +97,20 @@ li {
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+}
+
+.aboutmescrl {
+    position: absolute;
+    top: 230px;
+    left: 510px;
+    padding: 10px 40px;
+}
+
+.creativeprojscrl {
+    position: absolute;
+    top: 230px;
+    left:700px;
+    padding: 10px 40px;
 }
 
 .btn:focus { outline-style: none; }

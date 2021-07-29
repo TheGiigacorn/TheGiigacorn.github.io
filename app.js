@@ -1,7 +1,7 @@
 'use strict'
 const switcher = document.querySelector('.btn');
 
-const scroller = document.querySelector('.button');
+const scroller = document.querySelector('.aboutmescrl');
 
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
@@ -15,4 +15,13 @@ switcher.addEventListener('click', function() {
     }
 
     console.log('current theme name: ' + className)
+});
+
+scroller.addEventListener('click', function() {
+    let e = document.getElementById("el1");
+    e.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'start'
+    });
 });
