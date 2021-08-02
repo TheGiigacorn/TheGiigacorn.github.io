@@ -3,9 +3,9 @@ const switcher = document.querySelector('.btn');
 
 const scrollabout = document.querySelector('.aboutmescrl');
 
-const scrollcreate = document.querySelector('.creativeprojscrl')
+const scrollcreate = document.querySelector('.creativeprojscrl');
 
-const scrolltop = document.querySelector('.topscrl')
+var topscroll = document.querySelectorAll('.topscrl');
 
 
 
@@ -27,11 +27,14 @@ scrollcreate.addEventListener('click', function() {
     });
 });
 
-scrolltop.addEventListener('click', function() {
-    let e = document.getElementById("banner");
-    e.scrollIntoView({
-        block: 'start',
-        behavior: 'smooth',
-        inline: 'start'
+
+for (var i = 0; i < topscroll.length; i++) {
+    topscroll[i].addEventListener('click', function () {
+        let e = document.getElementById("banner");
+        e.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+            inline: 'start'
+        });
     });
-});
+};
