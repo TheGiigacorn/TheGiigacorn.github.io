@@ -5,7 +5,7 @@
 }
 
 * {
-    color: var(--fontColor);
+    color: white;
     font-family: helvetica;
     
 }
@@ -41,6 +41,10 @@ h2 {
     font-size: 40px;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 #banner{
     background-image: url("stripbg.jpg");
     background-repeat: no-repeat;
@@ -57,20 +61,20 @@ h2 {
 }
 
 #whiteline{
-    width: 45%; height: 1px;
-    border-style: solid;
-    border-color: white;
+    width: 45%; height: 3px;
     background-color: white;
     margin-left: 27.5%;
 }
 
 #aboutme{
-    width: 60%; height: 700px;
+    width: 60%; height: 800px;
     border-style: solid;
     border-color: white;
     background:rgba(1,1,1,0.5);
     margin-left :19.5%;
-    margin-top: 250px;
+    margin-top: 500px;
+    text-align: center;
+    --fontColor: white;
 }
 
 #creativeprojects{
@@ -80,6 +84,7 @@ h2 {
     background:rgba(1,1,1,0.5);
     margin-left: 19.5%;
     margin-top: 100px;
+    text-align: center;
 }
 
 #aboutpic{
@@ -108,6 +113,7 @@ h2 {
     background:rgba(1,1,1,0.5);
     margin-left: 19.5%;
     margin-top: 100px;
+    text-align: center;
 }
 
 #resumebox{
@@ -117,12 +123,13 @@ h2 {
     background:rgba(1,1,1,0.5);
     margin-left: 19.5%;
     margin-top: 100px;
+    text-align: center;
 }
 
 
 
 .gallery {
-    margin:17.5px;
+    margin:16px;
     border: 1px solid #ccc;
     float: left;
     width: 30%;
@@ -168,44 +175,61 @@ h2 {
     
 }
 
-.aboutmescrl {
+.button {
+    min-width: 170px;
     position: absolute;
     top: 230px;
-    left: 510px;
     padding: 10px 36px;
-    background-color: #303030;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 50px;
+    border-style: none;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid white;
+}
+
+.aboutmescrl {
+    left: 450px;
+    background-image: linear-gradient(to right, #3736b8 0%, #a47ed5 51%, #3736b8 100%);
 }
 
 .creativeprojscrl {
-    position: absolute;
-    top: 230px;
-    left: 680px;
-    padding: 10px 36px;
-    background-color: #303030;
+    left: 650px;
+    background-image: linear-gradient(to right, #3736b8 0%, #a47ed5 51%, #3736b8 100%);
 }
 
 .codingprojscrl {
-    position: absolute;
-    top: 230px;
-    left: 890px;
-    padding: 10px 36px;
-    background-color: #303030;
+    left: 850px;
+    background-image: linear-gradient(to right, #3736b8 0%, #a47ed5 51%, #3736b8 100%);
 }
 
 .resumescrl{
-    position: absolute;
-    top: 230px;
-    left: 1090px;
-    padding: 10px 36px;
-    background-color: #303030;
+    left: 1050px;
+    background-image: linear-gradient(to right, #3736b8 0%, #a47ed5 51%, #3736b8 100%);
 }
+
+.contactscrl{
+    left: 1250px;
+    background-image: linear-gradient(to right, #3736b8 0%, #a47ed5 51%, #3736b8 100%);
+}
+
 
 .topscrl {
     position: static;
     margin-top: 100px;
-    left: 47%;
-    padding: 10px 40px;
-    background-color: #303030;
+    margin-left: 47%;
+    background-image: linear-gradient(to right, #012681 0%, #294aab 51%, #012681 100%);
 }
 
 .btn:focus { outline-style: none; }
