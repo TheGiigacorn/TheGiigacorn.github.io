@@ -9,6 +9,8 @@ var scrollcode = document.querySelector('.codingprojscrl');
 
 var scrollresume = document.querySelector('.resumescrl');
 
+var scrollcontact= document.querySelector('.contactscrl');
+
 var topscroll = document.querySelectorAll('.topscrl');
 
 
@@ -42,6 +44,15 @@ scrollcode.addEventListener('click', function() {
 
 scrollresume.addEventListener('click', function() {
     let e = document.getElementById("resumebox");
+    e.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'start'
+    });
+});
+
+scrollcontact.addEventListener('click', function (){
+    let e = document.getElementById("contactbox");
     e.scrollIntoView({
         block: 'start',
         behavior: 'smooth',

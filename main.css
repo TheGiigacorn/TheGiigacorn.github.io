@@ -49,14 +49,14 @@ h1 {
     background-image: url("stripbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%; height: 350px;
+    width: 99.7%; height: 350px;
     top:0;
     left:0;
     position: absolute;
     border-style: solid;
-    border-color: var(--white);
+    border-color: white;
     text-align: center;
-    --fontColor: var(--white);
+    color: white;
     line-height: 50px;
 }
 
@@ -66,25 +66,24 @@ h1 {
     margin-left: 27.5%;
 }
 
-#aboutme{
-    width: 60%; height: 800px;
+.centercontainer{
+    width: 60%;
     border-style: solid;
     border-color: white;
     background:rgba(1,1,1,0.5);
     margin-left :19.5%;
-    margin-top: 500px;
     text-align: center;
-    --fontColor: white;
+    color: white;
+}
+
+#aboutme{
+    height: 800px;
+    margin-top: 500px;
 }
 
 #creativeprojects{
-    width: 60%; height:1000px;
-    border-style: solid;
-    border-color: white;
-    background:rgba(1,1,1,0.5);
-    margin-left: 19.5%;
+    height:1000px;
     margin-top: 100px;
-    text-align: center;
 }
 
 #aboutpic{
@@ -107,26 +106,26 @@ h1 {
 }
 
 #codingprojects{
-    width: 60%; height: 800px;
-    border-style: solid;
-    border-color: white;
-    background:rgba(1,1,1,0.5);
-    margin-left: 19.5%;
+    height: 800px;
     margin-top: 100px;
-    text-align: center;
 }
 
 #resumebox{
-    width: 60%; height: 1200px;
+    height: 1200px;
+    margin-top: 100px;
+    
+}
+
+#contactbox{
+    margin-top: 100px;
+    width: 99.7%; height: 400px;
+    position: absolute;
+    left: 0;
     border-style: solid;
     border-color: white;
     background:rgba(1,1,1,0.5);
-    margin-left: 19.5%;
-    margin-top: 100px;
     text-align: center;
 }
-
-
 
 .gallery {
     margin:16px;
@@ -148,31 +147,6 @@ h1 {
 .desc {
     padding: 5px;
     text-align: center;
-}
-
-.light-theme {
-    --fontColor: var(--black);
-    --bg: var(--green);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
-}
-
-.dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--green);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
-}
-
-.btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
-    border-radius: 5px;
-    border: none;
-    
 }
 
 .button {
@@ -224,12 +198,20 @@ h1 {
     background-image: linear-gradient(to right, #3736b8 0%, #a47ed5 51%, #3736b8 100%);
 }
 
-
 .topscrl {
     position: static;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 47%;
+    min-width: 170px;
+    padding: 10px 36px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 50px;
+    border-style: none;
     background-image: linear-gradient(to right, #012681 0%, #294aab 51%, #012681 100%);
 }
 
-.btn:focus { outline-style: none; }
+.topscrl:hover {
+    background-position: right center;
+}
+
