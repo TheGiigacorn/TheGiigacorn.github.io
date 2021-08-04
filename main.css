@@ -32,10 +32,6 @@ li {
     list-style: square;
   }
 
-abt {
-    font-family: helvetica;
-    font-size: 17px;
-}
 
 h2 {
     font-size: 40px;
@@ -89,7 +85,7 @@ h1 {
 #aboutpic{
     background-image: url(suitwithbackground.png);
     border-style: solid;
-    border-color: blue;
+    border-color: #3736b8;
     margin-left: 5%;
     height: 60%; width: 30%;
     background-size: cover;
@@ -103,11 +99,22 @@ h1 {
     margin-top: 5%;
     height: 60%; width: 50%;
     float: right;
+    font-size: 20px;
+    text-align: left;
+    
 }
 
 #codingprojects{
     height: 800px;
     margin-top: 100px;
+}
+
+#codingprojectstext{
+    height: 80%; width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+    text-align: left;
 }
 
 #resumebox{
@@ -118,13 +125,22 @@ h1 {
 
 #contactbox{
     margin-top: 100px;
-    width: 99.7%; height: 400px;
+    width: 99.7%; height: 300px;
     position: absolute;
     left: 0;
     border-style: solid;
     border-color: white;
     background:rgba(1,1,1,0.5);
     text-align: center;
+}
+
+#contacttext{
+    position: relative;
+    margin-top: 30px;
+    text-align: left;
+    height: 50%; width: 50%;
+    margin-left: 35%;
+    
 }
 
 .gallery {
